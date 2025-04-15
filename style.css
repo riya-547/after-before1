@@ -1,0 +1,36 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box; 
+}
+html,body {
+height: 100%;
+width: 100%;
+}
+
+button{
+    padding: 10px 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(28, 71, 223);
+    border: none;
+    
+    
+}
+button::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+   background-color: rgb(28, 28, 227);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s ease;
+}
+button:hover::before{
+transform: scale(1.4);
+opacity: 0;
+}
