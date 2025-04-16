@@ -32,6 +32,7 @@ h1::before{
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     color: transparent;
+    background-color: aquamarine;
 }
 
 
@@ -69,11 +70,12 @@ opacity: 0;
         flex-direction: column;
     }
     h1{
+      position: absolute; 
+      left: 4%; 
+      
+    
         
         
-        left: 4%;
-        top: 30%;
-        font-weight: 300px;
-        font-size: 50px;
+     
     }
 }
